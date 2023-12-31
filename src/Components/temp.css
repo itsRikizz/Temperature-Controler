@@ -22,6 +22,7 @@
 	display: flex;
 	border-radius: 50%;
 	color: rgba(40, 203, 218, 0.795);
+  text-shadow: #008cff;
 	height: 369px;
 	width: 400px;
 	text-align: center;
@@ -41,13 +42,15 @@ button {
     font-size: 17px;
     font-weight: 500;
     color: #0c0c0c80;
-    text-shadow: none;
+    text-shadow: #008cff;
     background: #008cff36;
     box-shadow: transparent;
     border: none;
     transition: 0.5s ease;
-    user-select: none;
+    /* user-select: none; */
     transition: color 0.5s, background 0.5s;
+    cursor: pointer;
+    
   }
 
 #btn:hover,:focus {
@@ -72,6 +75,7 @@ button {
 	align-items: center;
     margin-top: 30px;
     height: 54px;
+    
 }
 
 .neutral {
@@ -107,3 +111,36 @@ button {
   object-fit: cover; 
  
 }
+@media (max-width: 896px) {
+	.card{
+  background-color: #FFFFFF;
+  margin: 50px auto;
+  width: 200px;
+  height: 335px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 10px 10px 30px #BDBDBD;
+  position: relative;
+  }
+	.temperature-display-container {
+	  /* height: auto; */
+    width: 200px;
+	}
+  
+	.temperature-display {
+	  height: auto;
+	  width: 90%;
+	  font-size: 36px;
+	}
+  
+	.button-container {
+	  margin-top: 40px;
+	  height: 40px;
+
+	}
+  button{
+    width: 80px;
+    height: 40px;
+  }
+  
+  }
