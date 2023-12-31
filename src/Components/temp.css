@@ -1,0 +1,109 @@
+.app-container {
+	height: 400px;
+	width: 300px;
+	background: #2b5870;
+	border-radius: 20px;
+	box-shadow: 10px 10px 38px 0px rgba(0, 0, 0, 0.75);
+}
+
+.temperature-display-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 70%;
+    /* width: auto; */
+    /* border: 1px solid #008cff; */
+    border-radius: 15px;
+    position: relative;
+}
+
+.temperature-display {
+    /* border: 1px solid red; */
+	display: flex;
+	border-radius: 50%;
+	color: rgba(40, 203, 218, 0.795);
+	height: 369px;
+	width: 400px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	font-size: 48px;
+  z-index: 1;
+  
+
+	
+}
+
+button {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 100px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #0c0c0c80;
+    text-shadow: none;
+    background: #008cff36;
+    box-shadow: transparent;
+    border: none;
+    transition: 0.5s ease;
+    user-select: none;
+    transition: color 0.5s, background 0.5s;
+  }
+
+#btn:hover,:focus {
+    color: #ffffff;
+    background: #008cff;
+    border: 1px solid #008cff;
+    text-shadow: 0 0 5px #ffffff,
+                0 0 10px #ffffff,
+                0 0 20px #ffffff;
+    box-shadow: 0 0 5px #008cff,
+                0 0 20px #008cff,
+                0 0 50px #008cff,
+                0 0 100px #008cff;
+  }
+
+
+
+.button-container {
+   
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+    margin-top: 30px;
+    height: 54px;
+}
+
+.neutral {
+	background: rgb(184, 184, 184);
+}
+
+.cold {
+  /* transition: background 0.8s /ease-in; */
+	background: linear-gradient(to right, #035aa680, #ffffff11);
+}
+
+.hot {
+  /* transition: background 0.8s ease-in; */
+	background: linear-gradient(to right,#ff5100f1,#ffffff34);
+}
+.card {
+  background-color: #FFFFFF;
+  margin: 50px auto;
+  max-width: 400px;
+  height: 335px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 10px 10px 30px #BDBDBD;
+  position: relative;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 90%;
+  object-fit: cover; 
+ 
+}
